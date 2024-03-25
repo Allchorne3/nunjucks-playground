@@ -22,11 +22,11 @@ module.exports = function(eleventyConfig) {
     // minify html on prod build
     eleventyConfig.addTransform ('htmlmin', content => {
         if (process.env.NODE_ENV === 'production') {
-          return htmlmin.minify (content, {
-            useShortDoctype: true,
-            removeComments: true,
-            collapseWhitespace: true,
-          })
+                return htmlmin.minify (content, {
+                useShortDoctype: true,
+                removeComments: true,
+                collapseWhitespace: true,
+            })
         }
         return content
     })
@@ -38,7 +38,6 @@ module.exports = function(eleventyConfig) {
         slogan: 'Your global site slogan',
         description: "your default site description"
     });
-     
 
     return {
         htmlTemplateEngine: 'njk',
