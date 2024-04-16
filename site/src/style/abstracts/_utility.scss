@@ -19,6 +19,14 @@
 	to {background-position: -200% center;}
 }
 
+.is-page-anchor {
+	display: block;
+	font-size: 0;
+	position: relative;
+	top: -152px;
+}
+// <a id="" class="is-page-anchor"></a>
+
 // PADDING
 .pt-0 { padding-top: 0 !important; }
 .pr-0 { padding-right: 0 !important; }
